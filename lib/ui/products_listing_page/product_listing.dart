@@ -14,7 +14,7 @@ class ProductListingPage extends StatelessWidget {
     final screenHeight = MediaQuery.of(context).size.height;
 
     return Scaffold(
-      appBar: AppBar(
+      appBar: AppBar( 
         elevation: 0.0,
         leading: Padding(
             padding: const EdgeInsets.all(16.0),
