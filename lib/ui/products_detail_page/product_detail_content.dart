@@ -17,7 +17,7 @@ class ProductDetailContent extends StatelessWidget {
         children: <Widget>[
           // Product Image
           Image.asset(
-            "assets/images/stadia.png",
+            product.imagePath,
             height: screenHeight * 0.3,
           ),
           Container(
@@ -32,7 +32,7 @@ class ProductDetailContent extends StatelessWidget {
                 ),
                 Spacer(),
                 Text(
-                  '\$',
+                  '₹',
                   style: TextStyle(
                       fontWeight: FontWeight.w800,
                       color: Color(0xFF0000FF),
@@ -59,17 +59,18 @@ class ProductDetailContent extends StatelessWidget {
               SizedBox(width: 30),
               Container(
                   height: screenWidth / 15,
-                  child: Image.asset("assets/images/stadia_logo.png",)),
+                  child: Image.asset(
+                    "assets/images/stadia_logo.png",
+                  )),
             ],
           ),
           SizedBox(height: 10),
           Text(
             product.productInfo,
             style: TextStyle(
-              color: Color(0xFF909090).withOpacity(1),
-              fontWeight: FontWeight.w500,
-              fontSize: (screenHeight / 30) * 0.7
-            ), 
+                color: Color(0xFF909090).withOpacity(1),
+                fontWeight: FontWeight.w500,
+                fontSize: (screenHeight / 30) * 0.7),
           ),
         ],
       ),

@@ -18,6 +18,8 @@ class Product {
       name: "Pixel Stand",
       description: "New Release",
       buttonText: "",
+      productInfo: "Charge your Pixel wirelessly with Pixel Stand, and do more with your Google Assistant.1",
+      price: '6,900',
       backgroundColor: Color(0xFFF9F9F9));
 
   final Product dayDreamView = Product(
@@ -25,6 +27,8 @@ class Product {
     name: "DayDream View",
     description: "Premium",
     buttonText: "",
+    productInfo: "Enjoy VR with a soft, lightweight fabric headset that's easy-to-wear and an expressive controller that's simple to use.",
+    price: '4,499',
     backgroundColor: Color(0xFFE0DDFF),
   );
 
@@ -33,6 +37,8 @@ class Product {
       name: "Pixel 3a",
       description: "Meet the new Google Pixel 3a.",
       buttonText: "Learn More",
+      productInfo: "Introducing Pixel 3a. It has an extraordinary camera with features such as Night Sight, Super Res Zoom, Portrait Mode and HDR+.",
+      price: "30,999",
       backgroundColor: Color(0xFFF5F5F5));
 
   final Product stadia = Product(
@@ -41,7 +47,6 @@ class Product {
       description: "New Release",
       buttonText: "CHECK OUT",
       backgroundColor: Color(0xFFFBE9EB),
-      price: "69",
-      productInfo: "Stadia is Google's new cloud based "
-          "gaming platform that allows you to play your favorite git video games across screens instantly.");
+      price: "699",
+      productInfo: "Stadia is Google's new cloud based gaming platform that allows you to play your favorite git video games across screens instantly.");
 

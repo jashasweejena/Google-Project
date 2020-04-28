@@ -7,6 +7,10 @@ import 'package:google_products/ui/products_detail_page/red_button_bottom.dart';
 import 'bottom_buttons.dart';
 
 class ProductDetailPage extends StatelessWidget {
+  final Product product;
+
+  const ProductDetailPage({Key key, this.product}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     //TODONo Appbar so that the circle background isn't hidden.
@@ -39,7 +43,7 @@ class ProductDetailPage extends StatelessWidget {
               child: Column(
                 children: <Widget>[
                   ProductDetailContent(
-                    product: stadia,
+                    product: product,
                     screenHeight: screenHeight,
                     screenWidth: screenWidth,
                   ),
@@ -72,7 +76,10 @@ class ProductDetailPage extends StatelessWidget {
             left: 0.0,
             right: 0.0,
             bottom: screenWidth * 0.001,
-            child: ButtomButtons(screenHeight: screenHeight, screenWidth: screenWidth,),
+            child: ButtomButtons(
+              screenHeight: screenHeight,
+              screenWidth: screenWidth,
+            ),
           )
         ],
       ),

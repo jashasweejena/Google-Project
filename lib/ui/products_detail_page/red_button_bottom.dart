@@ -34,7 +34,10 @@ class ButtomButtons extends StatelessWidget {
             child: RaisedButton(
               color: Colors.white,
               elevation: 20,
-              child: Icon(Icons.add, color: Color(0xFF0000FF),),
+              child: Icon(
+                Icons.add,
+                color: Color(0xFF0000FF),
+              ),
               onPressed: () {},
               shape: CircleBorder(),
             ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_products/ui/products_detail_page/product_detail_page.dart';
 
 import '../../models/product.dart';
 
@@ -10,7 +11,9 @@ class BlueButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FlatButton(
-      onPressed: () {},
+      onPressed: () {
+        Navigator.push(context, MaterialPageRoute(builder: (context) => ProductDetailPage(product: product,)));
+      },
       child: Text(
         product.buttonText,
         style: TextStyle(
